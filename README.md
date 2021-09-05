@@ -79,6 +79,10 @@ plt.show()
 
 ```
 
+<p align="center">
+  <img src="./tests/parallel_twobody.png" width="550" title="Two-body example">
+</p>
+
 
 ### More Examples
 
