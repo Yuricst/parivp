@@ -23,7 +23,7 @@ We start by importing relevant modules (`matplotlib` is for plotting the results
 
 ```python
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt  # optional, for plotting results later
 from parivp import parsolve_ivp
 
 def twobody(t,state,mu):
