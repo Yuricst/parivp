@@ -1,5 +1,5 @@
 .. parivp documentation master file, created by
-   sphinx-quickstart on Sun Sep  5 19:54:56 2021.
+   sphinx-quickstart on Sun Sep  5 22:11:36 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -11,8 +11,6 @@ Welcome to parivp's documentation!
    :caption: Contents:
 
    api
-
-
 
 
 Indices and tables
