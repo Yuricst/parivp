@@ -28,8 +28,7 @@ def parsolve_ivp(
         min_step=0.0, 
         n_cpu=None):
     """Parallel solve_ivp wrapper.
-    For common arguments with solve_ivp, see scipy documentation:
-        https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html
+    For common arguments with solve_ivp, see scipy documentation: https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html
 
     Args:
         fun (callable): RHS of ODE system used by solve_ivp, with calling signature `fun(t,y)` or `fun(t,y,p)`
@@ -77,8 +76,7 @@ def parsolve_ivp(
 
 
 
-def _solve_ivp(fun, t_span, y0, method='RK45', t_eval=None, dense_output=False, events=None, vectorized=False, args=None, first_step=None, max_step=np.inf,
-    rtol=1.e-12, atol=1.e-12, jac=None, jac_sparsity=None, lband=None, uband=None, min_step=0.0):
+def _solve_ivp(fun, t_span, y0, method='RK45', t_eval=None, dense_output=False, events=None, vectorized=False, args=None, first_step=None, max_step=np.inf, rtol=1.e-12, atol=1.e-12, jac=None, jac_sparsity=None, lband=None, uband=None, min_step=0.0):
     """Wrapper to solve_ivp for optional arguments handling"""
     return solve_ivp(fun, t_span, y0, method='RK45', t_eval=t_eval, dense_output=dense_output, events=events, vectorized=vectorized, args=args, first_step=first_step, max_step=max_step, rtol=rtol, atol=atol, jac=jac, jac_sparsity=jac_sparsity, lband=lband, uband=uband, min_step=min_step)
 
