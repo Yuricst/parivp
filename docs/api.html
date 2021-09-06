@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>API &mdash; parivp 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to parivp’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> parivp
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-parivp.parallel_ivp">Parallel IVP solving</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">parivp</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api">
+<h1>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-parivp.parallel_ivp">
+<span id="parallel-ivp-solving"></span><h2>Parallel IVP solving<a class="headerlink" href="#module-parivp.parallel_ivp" title="Permalink to this headline">¶</a></h2>
+<p>Parallel ODE integration</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="parivp.parallel_ivp.parsolve_ivp">
+<span class="sig-prename descclassname"><span class="pre">parivp.parallel_ivp.</span></span><span class="sig-name descname"><span class="pre">parsolve_ivp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fun</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_spans</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'RK45'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_eval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dense_output</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">events</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vectorized</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rtol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-12</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-12</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jac</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jac_sparsity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lband</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uband</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_cpu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#parivp.parallel_ivp.parsolve_ivp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parallel solve_ivp wrapper.
+For common arguments with solve_ivp, see scipy documentation: <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fun</strong> (<em>callable</em>) – RHS of ODE system used by solve_ivp, with calling signature <cite>fun(t,y)</cite> or <cite>fun(t,y,p)</cite></p></li>
+<li><p><strong>t_spans</strong> (<em>list</em>) – list of propagation times</p></li>
+<li><p><strong>ics</strong> (<em>list</em>) – list of initial conditions</p></li>
+<li><p><strong>method</strong> (<em>str</em><em>, </em><em>optional</em>) – integration method used by solve_ivp</p></li>
+<li><p><strong>t_eval</strong> (<em>array_like</em><em> or </em><em>None</em><em>, </em><em>optional</em>) – time-stamps where solution is computed</p></li>
+<li><p><strong>dense_output</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether to compute a continuous solution.</p></li>
+<li><p><strong>events</strong> (<em>callable</em><em>, or </em><em>list of callables</em><em>, </em><em>optional</em>) – events to track.</p></li>
+<li><p><strong>vectorized</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether fun is implemented in a vectorized fashion. Default is False.</p></li>
+<li><p><strong>ps</strong> (<em>list</em><em>, </em><em>optional</em>) – list of optional arguments passed to user-defined ODE function.</p></li>
+<li><p><strong>first_step</strong> (<em>bool</em>) – Initial step size. Default is None which means that the algorithm should choose</p></li>
+<li><p><strong>max_step</strong> (<em>float</em><em>, </em><em>optional</em>) – maximum allowed step-size, default is <cite>np.inf</cite></p></li>
+<li><p><strong>rtol</strong> (<em>float</em><em> or </em><em>array_like</em><em>, </em><em>optional</em>) – relative tolerance</p></li>
+<li><p><strong>atol</strong> (<em>float</em><em> or </em><em>array_like</em><em>, </em><em>optional</em>) – absolute tolerance</p></li>
+<li><p><strong>jac</strong> (<em>array_like</em><em>, </em><em>sparse_matrix</em><em>, </em><em>callable</em><em> or </em><em>None</em><em>, </em><em>optional</em>) – Jacobian matrix</p></li>
+<li><p><strong>jac_sparsity</strong> (<em>array_like</em><em>, </em><em>sparse matrix</em><em> or </em><em>None</em><em>, </em><em>optional</em>) – sparsity of Jacobian matrix</p></li>
+<li><p><strong>lband</strong> (<em>int</em><em> or </em><em>None</em><em>, </em><em>optional</em>) – parameters defining the lower band of the Jacobian for the ‘LSODA’ method.</p></li>
+<li><p><strong>uband</strong> (<em>int</em><em> or </em><em>None</em><em>, </em><em>optional</em>) – parameters defining the upper band of the Jacobian for the ‘LSODA’ method.</p></li>
+<li><p><strong>min_step</strong> (<em>float</em><em>, </em><em>optional</em>) – minimum allowed step size for ‘LSODA’ method. By default min_step is zero.</p></li>
+<li><p><strong>n_cpu</strong> (<em>int</em><em> or </em><em>None</em><em>, </em><em>optional</em>) – number of CPU to be used by <cite>multiprocessing.Pool</cite>. If None, using <cite>multiprocessing.cpu_count()</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of bunch-objects, returned by <cite>solve_ivp</cite></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(list)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to parivp’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, yuricst.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
