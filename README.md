@@ -1,6 +1,6 @@
 # parivp: Parallel IVP in Python using multiprocessing
 
-[![Documentation Status](https://readthedocs.org/projects/parivp/badge/?version=latest)](https://parivp.readthedocs.io/en/latest/)
+[Documentation](https://yuricst.github.io/parivp/)
 
 This module allows for parallel integration of initial value problems (IVP) using Python's multiprocessing features. Syntax follows those of `scipy.integrate.solve_ivp()`, hence enabling parallelization with minimal changes. 
 
