@@ -6,6 +6,8 @@
 Welcome to parivp's documentation!
 ==================================
 
+Parallel methods for IVP.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
