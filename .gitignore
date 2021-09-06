@@ -130,3 +130,6 @@ dmypy.json
 
 # documentation builds
 /build
+
+# Mac file
+.DS_Store
