@@ -2,7 +2,7 @@
 
 This module allows for parallel integration of initial value problems (IVP) using Python's multiprocessing features. Syntax follows those of `scipy.integrate.solve_ivp()`, hence enabling parallelization with minimal changes. 
 
-See [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html) for documentation on `solve_ivp()`.
+See [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html) for scipy's documentation on `solve_ivp()`.
 
 
 ### Dependencies
@@ -23,7 +23,7 @@ We start by importing relevant modules (`matplotlib` is for plotting the results
 
 ```python
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt  # optional, for plotting results later
 from parivp import parsolve_ivp
 
 def twobody(t,state,mu):
